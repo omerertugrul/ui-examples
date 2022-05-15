@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --Spartan: "Spartan", sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--Spartan);
+}
+
+body {
+  background-color: var(--White);
+  background-image: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  background-position: right 63vw bottom 53vh, left 30vw top 13vh;
+  background-repeat: no-repeat, no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    height: 100%;
+    margin: 64px 0;
+  }
+}
+
+.container {
+  width: 1130px;
+  margin-top: 250px;
+  min-height: 695px;
+}
+
+.header {
+  max-width: 400px;
+  text-align: left;
+}
+
+.header-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: var(--VeryDarkMagenta);
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-card {
+  padding: 1rem 2rem;
+  display: flex;
+  background-color: var(--LightGrayishMagenta);
+  border-radius: 0.5rem;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.rating-card p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--VeryDarkMagenta);
+}
+
+.star {
+  margin-right: 45px;
+}
+
+.rating-card:nth-child(2) {
+  transform: translateX(10%);
+}
+
+.rating-card:nth-child(3) {
+  transform: translateX(20%);
+}
+
+h2 {
+  min-width: 125%;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  color: var(--DarkGrayishMagenta);
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.comment {
+  display: flex;
+  gap: 3%;
+}
+
+.comment-card:nth-child(2) {
+  margin-top: 25px;
+}
+
+.comment-card:nth-child(3) {
+  margin-top: 50px;
+}
+
+.user-data {
+  margin-top: 40px;
+  margin-left: 27px;
+}
+
+.comment-card {
+  min-width: 381px;
+  background-color: var(--VeryDarkMagenta);
+  height: 224px;
+  border-radius: 0.5rem;
+  display: grid;
+}
+
+h3 {
+  color: var(--White);
+  font-size: 13px;
+}
+
+.comment-card p {
+  color: var(--White);
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 0.89rem;
+  line-height: 1.4rem;
+}
+
+.user-container {
+  display: flex;
+}
+
+.user-container img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+span {
+  color: var(--SoftPink);
+  font-size: 13px;
+}

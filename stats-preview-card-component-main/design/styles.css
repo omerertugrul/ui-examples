@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --bg-color: hsl(233, 47%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  color: white;
+  width: 1100px;
+  height: 450px;
+  background-color: #1b1938;
+  display: flex;
+  border-radius: 1%;
+}
+
+.container {
+  color: white;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17%;
+  padding-right: 72px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 540px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  max-width: 540px;
+  height: 100%;
+  border-radius: 0 1% 1% 0;
+}
+
+.img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 100%, 30%, 0.55);
+  border-radius: 0 1% 1% 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.purple {
+  color: #aa5cdb;
+  font-size: 2.1rem;
+}
+
+.text-container {
+  padding: 72px;
+}
+
+.text-container h1 {
+  font-weight: 900;
+  font-size: 2.1rem;
+  margin-bottom: 24px;
+  font-size: xx-large;
+  align-items: center;
+}
+
+.text-container p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  width: 96%;
+  margin-block-start: 1em;
+}
+
+.info p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-block-start: 0.2em;
+}
+
+.info h6 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}

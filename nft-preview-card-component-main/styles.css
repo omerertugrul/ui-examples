@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --line-color: hsl(215, 32%, 27%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  width: 380px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.main-img {
+  width: 332px;
+  border-radius: 8px;
+}
+
+.main-img:hover {
+  cursor: pointer;
+  background-color: var(--cyan);
+}
+
+.card-header {
+  position: relative;
+  height: 332px;
+}
+
+.overlay-icon {
+  height: 100%;
+  width: 100%; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;    
+  opacity: 0;    
+  transition: all 0.3s ease;
+  background: hsla(178, 100%, 50%, 0.5);
+  border-radius: 0.5rem;
+}
+
+.view-icon {    
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(0, 0%, 100%);    
+}
+
+.card-header:hover .overlay-icon {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.card h6 {
+  margin: 12px 0;
+}
+
+.card h6:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card p,
+span {
+  font-size: 14px;
+  color: var(--soft-blue);
+}
+
+.icon-text-container {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-eth,
+.icon-clock {
+  display: flex;
+  gap: 6px;
+}
+
+.cyan {
+  color: var(--cyan) !important;
+}
+
+.line {
+  border: 0;
+  height: 1px;
+  background-color: var(--line-color);
+}
+
+.creater-info {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.creater-info span {
+  color: white;
+}
+
+.creater-info span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.creater-info img {
+  width: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testimonial-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 78px;
+}
+
+.top {
+  display: flex;
+}
+
+.lower {
+  display: flex;
+}
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  width: 550px;
+  height: 300px;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-right: 25px;
+}
+
+.daniel .primary-text {
+  color: white;
+  font-size: 20px;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.jonathan .primary-text {
+  color: white;
+}
+
+.jeanette {
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  height: 260px;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-top: 25px;
+}
+
+.jeanette .primary-text {
+  font-size: 20px;
+}
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  width: 550px;
+  height: 260px;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-left: 25px;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.patrick .primary-text {
+  font-size: 20px;
+}
+
+.kira {
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  height: 580px;
+  border-radius: 8px;
+  padding: 2.5rem;
+  margin-left: 25px;
+}
+
+img {
+  border-radius: 50%;
+  width: 1.75rem;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 0.8125rem;
+  color: hsl(210, 46%, 95%);
+  opacity: 0.7;
+}
+
+.name-1 {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.8125rem;
+}
+
+.position {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.8125rem;
+}
+
+.secondary-text {
+  font-size: 0.8125rem;
+  color: hsl(0, 0%, 81%);
+  margin-top: 1rem;
+}
+
+.title {
+  margin-left: 20px;
+}
+

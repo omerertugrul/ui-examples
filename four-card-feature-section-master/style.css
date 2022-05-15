@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.header__upper h1 {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+.header__middle h1 {
+  color: hsl(234, 12%, 34%);
+}
+
+.header__lower p {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.content {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.content__card {
+  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  border-radius: 10px;
+  height: 250px;
+  width: 300px;
+  justify-content: flex-start;
+  background-color: #ffff;
+  margin-top: 15px;
+}
+
+.bt {
+  height: 3%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-inside {
+  padding: 0 10px;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-left: 10px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.card-description {
+  margin-left: 10px;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.card__inside .icon {
+  margin-top: 35px;
+  margin-left: 225px;
+  width: 100%;
+}
+
+.bt.left {
+  background-color: #45d3d3;
+}
+
+.bt.middle-one {
+  background-color: #ea5353;
+}
+
+.bt.middle-two {
+  background-color: #fcaf4a;
+}
+
+.bt.right {
+  background-color: #549ef2;
+}

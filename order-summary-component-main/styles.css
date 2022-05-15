@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --bg-color: hsl(225, 100%, 94%);
+  --text-color: hsl(224, 23%, 55%);
+  --button-color: hsl(245, 75%, 52%);
+  --container-color: hsl(225, 100%, 98%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card {
+  background-color: white;
+  width: 450px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: -4px 13px 24px 1px rgba(26, 17, 120, 0.11);
+}
+.card h3 {
+  font-weight: 900;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.card p {
+  color: var(--text-color);
+  max-width: 300px;
+  text-align: center;
+}
+
+.hero-bg {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.container {
+  background-color: var(--container-color);
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan img {
+  width: 32px;
+  height: 32px;
+}
+.bold {
+  font-weight: 800;
+  color: black !important;
+}
+.year p {
+  font-size: 12px;
+}
+.year p:last-child {
+  margin-top: 2px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.link-button {
+  color: var(--button-color);
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.pay-button {
+  background-color: var(--button-color);
+  color: white;
+  width: 300px;
+  height: 48px;
+  box-shadow: -4px 13px 24px 1px rgba(26, 17, 120, 0.11);
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.pay-button:hover {
+  opacity: 0.8;
+}
+
+.cancel-button {
+  color: var(--text-color);
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.cancel-button:hover {
+  color: black;
+}

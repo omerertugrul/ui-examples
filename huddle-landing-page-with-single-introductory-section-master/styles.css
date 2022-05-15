@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/bg-mobile.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+}
+
+.header img {
+  width: 43%;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 85%;
+}
+
+.text {
+  display: flex;
+  margin: 0 30px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+  text-align: center;
+  font-family: poppins;
+}
+
+.text h2 {
+  font-size: 25px;
+  color: white;
+}
+
+.text p {
+  color: white;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+button {
+  color: hsl(257, 40%, 49%);
+  background: white;
+  padding: 12px 85px;
+  font-size: 14px;
+  border-radius: 33px;
+  outline: none;
+  border: none;
+  font-family: var(--bodyfont);
+  box-shadow: 3px 5px 8px 2px rgb(0 0 0 / 25%);
+}
+
+ul {
+  margin-top: 20%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid white;
+  align-items: center;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+li img {
+  width: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header img {
+    width: 15%;
+  }
+
+  .middle {
+    margin: 0px 3rem;
+    display: flex;
+  }
+
+  .text {
+    margin-top: -7px;
+    width: 40%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .text h2 {
+    font-size: 2.5rem;
+  }
+  .img img {
+    width: 97%;
+  }
+
+  ul {
+    justify-content: flex-end;
+    margin-top: 0%;
+    margin-right: 5%;
+  }
+
+  li {
+    width: 45px;
+    height: 45px;
+  }
+
+  li img {
+    width: 20px;
+  }
+}
