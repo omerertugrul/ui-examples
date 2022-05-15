@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --bg-color: hsl(0, 0%, 95%);
+  --bg-sedans-color: hsl(31, 77%, 52%);
+  --bg-suvs-color: hsl(184, 100%, 22%);
+  --bg-luxury-color: hsl(179, 100%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    height: 100%;
+    margin: 64px 0;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .orange {
+    border-bottom-left-radius: 0% !important;
+    border-top-right-radius: 2%;
+  }
+  .dark-cyan {
+    border-top-right-radius: 0% !important;
+    border-bottom-left-radius: 2%;
+  }
+}
+
+.car {
+  width: 250px;
+  height: 410px;
+  color: white;
+  padding: 36px;
+}
+
+.orange {
+  background-color: var(--bg-sedans-color);
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.cyan {
+  background-color: var(--bg-suvs-color);
+}
+
+.dark-cyan {
+  background-color: var(--bg-luxury-color);
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.car h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: "Big Shoulders Display";
+  color: var(--bg-color);
+}
+
+.car p {
+  font-size: 12px;
+  font-family: "Lexend Deca";
+  font-weight: 400 !important;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 18px;
+}
+
+button {
+  margin-top: 64px;
+  border-radius: 64px;
+  padding: 12px 24px;
+  cursor: pointer;
+  color: inherit;
+  font-size: 12px;
+  font-family: "Lexend Deca";
+  border: 1px solid white;
+}
+
+button:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.orange-color {
+  color: var(--bg-sedans-color);
+}
+
+.cyan-color {
+  color: var(--bg-suvs-color);
+}
+
+.dark-cyan-color {
+  color: var(--bg-luxury-color);
+}
